@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: hsl(0, 0%, 59%);
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Franklin", sans-serif;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+.logo {
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+  background-image: url("/images/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  width: 60vh;
+  min-width: 600px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+.imagen {
+  width: 100%;
+}
+.divCorreo {
+  display: flex;
+  margin-top: 1em;
+  /*margin-bottom: 2.5em;*/
+  gap: 15px;
+  width: 90%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+h3 {
+  text-align: left;
+  margin: 0;
+  margin-left: 2em;
+  font-size: 12px;
+  color: hsl(354, 100%, 66%);
+  font-style: italic;
+}
+.alert {
+  display: flex;
+  margin-bottom: 2.5em;
+  width: 90%;
+}
+input {
+  padding: 1em 2em 1em 2em;
+  border: 1px hsl(0, 0%, 59%) solid;
+  border-radius: 25px;
+}
+input.correo {
+  width: 65%;
+}
+#enviar {
+  width: 30%;
+  color: white;
+  border: none;
+  background-color: rgb(79, 125, 243);
+  box-shadow: rgba(79, 125, 243, 0.4) 0px 3px 8px;
+  cursor: pointer;
+}
+#enviar:hover {
+  background-color: hsl(223, 100%, 88%);
+  box-shadow: rgba(79, 125, 243, 0.4) 0px 3px 8px;
+}
+.titulo {
+  text-align: center;
+}
+h1 {
+  font-weight: 300;
+}
+span.negrita {
+  font-weight: 700;
+  color: black;
+}
+h2 {
+  font-size: 16px;
+}
+nav {
+  margin-top: 20px;
+  color: rgb(79, 125, 243);
+  margin-bottom: 20px;
+}
+i::before {
+  position: relative;
+  top: 20%;
+  left: 25%;
+}
+i {
+  width: 32px;
+  height: 32px;
+  border: rgb(79, 125, 243) 1px solid;
+  border-radius: 50%;
+  justify-content: center;
+  margin-left: 0.5em;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  cursor: pointer;
+}
+i:hover {
+  width: 32px;
+  height: 32px;
+  border: rgb(79, 125, 243) 1px solid;
+  border-radius: 50%;
+  justify-content: center;
+  margin-left: 0.5em;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  background-color: rgb(79, 125, 243);
+  color: white;
+}
+.invi {
+  opacity: 0;
+}
+.visi {
+  opacity: 1;
+}
+.derechos {
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  html,
+  body {
+    display: flex;
+    width: 100vw;
+    background-color: hsl(0, 0%, 98%);
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    min-width: 300px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  .divCorreo {
+    flex-direction: column;
+  }
+  #enviar {
+    width: 100%;
+  }
+  #correo {
+    width: 100%;
+  }
+  .imagen {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="js/main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/31be659c72.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Frontend Mentor | Ping coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="contenedor">
+        <div class="logo"></div>
+        <div class="titulo">
+          <h1 class="were">
+            We are launching
+            <span class="negrita"> soon! </span>
+          </h1>
+          <h2>Subscribe and get notified</h2>
+        </div>
+        <div class="divCorreo">
+          <input type="email" name="correo" id="correo" class="correo" value ""
+          placeholder="Your email address" />
+          <input
+            type="button"
+            value="Notify Me"
+            onclick="validarEmail(correo.value)"
+            id="enviar"
+          />
+        </div>
+        <div class="alert invi" id="alerta">
+          <h3>Please provide a valid email address</h3>
+        </div>
+        <div class="imagen">
+          <img src="/images/illustration-dashboard.png" alt="" class="imagen" />
+        </div>
+        <nav class="rss">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </nav>
+        <div class="derechos">&copy; Copyright Ping. All rights reserved.</div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.facebook.com/Phoenixrx" target="_blank"
+          >Jose Luna</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
